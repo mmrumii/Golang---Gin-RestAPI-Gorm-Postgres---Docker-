@@ -16,5 +16,6 @@ func Connect() {
 		println("seems like db connected")
 	}
 	db.AutoMigrate(&models.User{})
+	db.AutoMigrate(&models.Blog{})
 	DB = db
 }
